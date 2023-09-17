@@ -365,26 +365,35 @@
       <div class="contenido-seccion">
         <h2>CONTACTO</h2>
         <div class="fila">
+          
           <!-- Formulario -->
-          <form
-            action="?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>
-            method="post"
           <div class="col">
-  
+            <form name="Formulario-contacto"
            <input type="text" name="Name" placeholder="Your Name" required>
            <input type="email" name="email" placeholder="Your Email" required>
               <textarea
-                name="coments"
                 id="coments"
                 cols="30"
                 rows="10"
                 placeholder="Message"
               ></textarea>
               <button>
-                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                Enviar Mensaje<id="enviar correo" class="fa-solid fa-paper-plane"></i>
                 <span class="overlay"></span>
               </button>
             </form>
+          <scrip>
+            const btnEnvio=document.getElemenByid('enviarcorreo');
+            btnEnvio.addEventListener('click', Funcion(e){
+            e.preventDefault();
+            const email= document.getElementByid('email').value;
+            const nombre= document.getElementByid('nombre').value;
+            const mensaje= document.getElementByid('mensaje').value;
+            window.location.href=`nolaxj9@gmail.com?
+            subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A$
+            {correo}%0AMensaje%3A${Mensaje}`;
+            });
+            </scrip> 
           </div>
           <!-- Mapa -->
           <div class="col">
