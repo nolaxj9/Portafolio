@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="gradien.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Kevin</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img srcset="img/kevin.png" alt="" />
+        </div>
+        <h1>Kevin Grossenbacher</h1>
+        <h2>Desarrollador Web</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/profile.php?id=61550359091745"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/kevin-german-grossenbacher"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>¡Bienvenidos!</h2>
+        <p>
+          <span>Hola es un placer que estes aqui. </span> Me precento mi nombre
+          es kevin y tengo 29 años,Este es mi primer proyecto. Tengo la capacidad de aprender todo muy rapido, no hace mas de 3 meses que estudio programacion por mi cuenta, Estoy muy emocionado por mis progresos apesar que me falta mucho por aprender.
+          estoy dispuesto hacer lo que sea necesario para poder
+          ayudarte. ¿Porque elegirme? Creatividad y Diseño Impactante, Creo
+          sitios web atractivos y funcionales que cautivan a tus visitantes y
+          reflejan la esencia de tu negocio. Entiendo que cada proyecto es
+          único, por lo que trabajo estrechamente contigo para asegurarme de que
+          tus necesidades y objetivos se cumplan en cada etapa del proceso.
+          ¿Listo para llevar tu presencia en línea al siguiente nivel?
+          ¡Hablemos! Estoy aquí para responder a tus preguntas y discutir cómo
+          podemos trabajar juntos en tu próximo proyecto web.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                19 Marzo 1994
+              </li>
+              <li>
+                <strong>Email</strong>
+                nolaxj9@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Choele Choel Rio Negro
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-apple"></i>
+                <span>MAC OS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Hardware</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>81%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Software</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>It</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>94%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Perito en Salud y Ambiente</h4>
+              <span class="casa">C.E.M 14</span>
+              <span class="fecha">2012 - 2013</span>
+              <p>
+                Estudie 5 años en una escuela tecnica, y antes de egresarme de
+                tecnico electronico, me cambie de secundario y egresé como
+                perito en salyud y ambiente. Choele Choel Rio Negro
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Armado y Reparacion de Pc</h4>
+              <span class="casa">Icat</span>
+              <span class="fecha">2013 - 2015</span>
+              <p>Instituto de capacitacion y trabajo, Neuquen capital</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Coah de Crosstraining</h4>
+              <span class="casa">Unidos Program</span>
+              <span class="fecha">2020 - 2021 2022-2023</span>
+              <p>L1 y L2 Coach de crosstraining, capacitacion Online</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Telecomunicaciones</h4>
+              <span class="casa">Arroba sur Internet</span>
+              <span class="fecha">3 meses</span>
+              <p>
+                Trabaje como tecnico de redes y Intalaciones de Fibra optica.
+                Choele choel Rio Negro
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Tecnico electronico</h4>
+              <span class="casa">Emega informatica</span>
+              <span class="fecha">2021 - 202023</span>
+              <p>
+                Servicio tecnico de computacion donde me encargaba de reparar
+                equipos electronicos nivel software y hardware, tambien reparaba
+                celulares nivel hardware y microsoldadura. Choele Choel
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Servicio tecnico</h4>
+              <span class="casa">CBS computacion</span>
+              <span class="fecha">2014 - 2016</span>
+              <p>
+                Servicios tecnicos de impresoras en el cual reparabamos equipos
+                epson, nivel hardware y software. Neuquen Capital
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/Latop1.png" loading="lazy" alt="pc1" height="300px"/>
+            <div class="overlay">
+              <h3>Diseño</h3>
+              <p>Creativo </p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/Laptop2.png" loading="lazy" alt="pc2" height="300px"/>
+            <div class="overlay">
+              <h3>Diseño</h3>
+              <p>Creativo</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/Latop3.png" loading="lazy" alt="pc3" width="100px" height="300px"/>
+            <div class="overlay">
+              <h3>Diseño</h3>
+              <p>Creativo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+           <input type="text" name="Name" placeholder="Your Name" required>
+           <input type="email" name="email" placeholder="Your Email" required>
+              <textarea
+                name="coments"
+                id="coments"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button>
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/mapa.png" alt="mapa" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Rio Negro Choele Choel
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Tel:  291-5322399
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  nolaxj9@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=61550359091745"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/kevin-german-grossenbacher"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
