@@ -368,14 +368,14 @@
           
           <!-- Formulario -->
           <div class="col">
-            <form name="Formulario-contacto"
+          <form onsubmit="enviarMensaje(); reset(); return fasle;">
            <input type="text" name="Name" placeholder="Your Name" required>
            <input type="email" name="email" placeholder="Your Email" required>
               <textarea
                 id="coments"
                 cols="30"
                 rows="10"
-                placeholder="Message"
+                placeholder="Mensage"
               ></textarea>
               <button>
                 Enviar Mensaje<id="enviar correo" class="fa-solid fa-paper-plane"></i>
@@ -423,21 +423,22 @@
     </footer>
 
     <script src="script.js"></script>
-    <scrip>
-      <scrip>
-const btnEnvio = document.getElementById('enviarcorreo');
+      <script>
+            scr = "https://smtpjs.com/v3/smtp.js";
+          </script>
+          <script>
+            function enviarMensaje() {
+              Email.enviarMensaje({
+                Host: "smtp.gmail.com",
+                Username: "nolaxj9@gmail.com",
+                Password: "Flatronw2042s",
+                To: "nolaxj9@gmail.com",
+                From: Document.getElementById("email").value,
+                Subject: "Nuevo contacto",
+                Body: "And this is the body",
+              }).then((mensaje) => alert(mensaje));
+            }
+          </script>
 
-btnEnvio.addEventListener('click', function (e) {
-e.preventDefault();
-const email = document.getElementById("email").value;
-const nombre = document.getElementByid('nombre').value;
-const mensaje = document.getElementByid('mensaje').value;
-window.location.href=`mailto:nolaxj9@gmail.com?
-subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A$
-{email}%0AMensaje%3A${mensaje}`;
-});
-
-</scrip> 
-    </scrip>
   </body>
 </html>
