@@ -382,18 +382,6 @@
                 <span class="overlay"></span>
               </button>
             </form>
-          <scrip>
-            const btnEnvio=document.getElemenByid('enviarcorreo');
-            btnEnvio.addEventListener('click', Funcion(e){
-            e.preventDefault();
-            const email= document.getElementByid('email').value;
-            const nombre= document.getElementByid('nombre').value;
-            const mensaje= document.getElementByid('mensaje').value;
-            window.location.href=`nolaxj9@gmail.com?
-            subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A$
-            {correo}%0AMensaje%3A${Mensaje}`;
-            });
-            </scrip> 
           </div>
           <!-- Mapa -->
           <div class="col">
@@ -435,5 +423,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <scrip>
+      <scrip>
+const btnEnvio = document.getElementById('enviarcorreo');
+
+btnEnvio.addEventListener('click', function (e) {
+e.preventDefault();
+const email = document.getElementById("email").value;
+const nombre = document.getElementByid('nombre').value;
+const mensaje = document.getElementByid('mensaje').value;
+window.location.href=`nolaxj9@gmail.com?
+subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A$
+{email}%0AMensaje%3A${mensaje}`;
+});
+
+</scrip> 
+    </scrip>
   </body>
 </html>
